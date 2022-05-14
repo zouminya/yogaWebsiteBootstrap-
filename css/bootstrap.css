@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 60px;
+}
+
+:root {
+  --white-color: #f0f0f0;
+  --second-color: #00a4bd;
+
+  --bg-white: var(--white-color);
+  --btn-primary: var(--second-color);
+}
+
+main img {
+  width: 280px;
+}
+
+#about {
+  background-color: var(--bg-white);
+  background: url("../img/About\ me.jpeg") no-repeat center left/cover;
+}
+
+#sequence img {
+  width: 250px;
+}
+
+.button-primary {
+  background: var(--btn-primary);
+  color: var(--white-color);
+}
+
+@media (max-width: 768px) {
+  #about {
+    background: url("../img/About\ me.jpeg") no-repeat center left/cover;
+  }
+
+  #about p {
+    font-size: 1rem;
+  }
+}
